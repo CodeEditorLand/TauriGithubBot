@@ -1,37 +1,26 @@
 {
-	"author": {
-		"email": "Land@PlayForm.Cloud",
-		"name": "🌆 — Land —",
-		"url": "HTTPS://Land.PlayForm.Cloud"
-	},
-	"bugs": {
-		"url": "HTTPS://GitHub.Com/CodeEditorLand/TauriGitHubBot/issues"
-	},
-	"dependencies": {
-		"probot": "13.2.0"
-	},
+	"name": "tauri-github-bot",
+	"version": "0.0.1",
+	"private": false,
 	"description": "A GitHub bot for tauri-apps org to automate various tasks and intended to used only by tauri-apps org members.",
-	"devDependencies": {
-		"@octokit/rest": "20.1.0",
-		"@playform/build": "0.0.7",
-		"@playform/document": "0.0.6",
-		"nock": "13.5.4",
-		"tsup": "8.0.2"
-	},
-	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/TauriGitHubBot#readme",
 	"keywords": [
 		"land"
 	],
-	"license": "SEE LICENSE IN LICENSE",
-	"name": "tauri-github-bot",
-	"private": false,
-	"publishConfig": {
-		"access": "public"
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/TauriGitHubBot#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/TauriGitHubBot/issues"
 	},
 	"repository": {
 		"type": "git",
 		"url": "git+HTTPS://github.com/CodeEditorLand/TauriGitHubBot.git"
 	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "🌆 — Land —",
+		"email": "Land@PlayForm.Cloud",
+		"url": "HTTPS://Land.PlayForm.Cloud"
+	},
+	"type": "module",
 	"scripts": {
 		"Document": "Document 'Source/**/*.ts'",
 		"build": "tsup src/index.ts --clean",
@@ -39,6 +28,17 @@
 		"start": "probot run ./dist/index.js",
 		"type-check": "tsc --noEmit"
 	},
-	"type": "module",
-	"version": "0.0.1"
+	"dependencies": {
+		"probot": "13.2.0"
+	},
+	"devDependencies": {
+		"@octokit/rest": "20.1.0",
+		"@playform/build": "0.0.7",
+		"@playform/document": "0.0.6",
+		"nock": "13.5.4",
+		"tsup": "8.0.2"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }
