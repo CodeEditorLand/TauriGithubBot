@@ -2,6 +2,10 @@
 # SPDX-License-Identifier: Apache-2.0
 # SPDX-License-Identifier: MIT
 
+node_modules
+npm-debug.log
+*.pem
 !mock-cert.pem
+.env
 coverage
 dist
