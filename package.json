@@ -11,7 +11,7 @@
 	},
 	"devDependencies": {
 		"@octokit/rest": "21.0.1",
-		"nock": "13.5.4",
+		"nock": "14.0.0-beta.8",
 		"tsup": "8.1.2"
 	}
 }
