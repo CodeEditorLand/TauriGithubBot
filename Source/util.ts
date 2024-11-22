@@ -11,6 +11,7 @@ export async function getIssueInfoFromUrl(
 	url: string,
 ): Promise<[string, string, number, string] | undefined> {
 	const matches = /\.*github\.com\/(.+?)\/(.+?)\/issues\/([0-9]+)$/.exec(url);
+
 	if (!matches) return;
 
 	const [, owner, repo, issue_number] = matches;

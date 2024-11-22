@@ -25,9 +25,11 @@ export default (app: Probot): void => {
 	try {
 		app.on("issue_comment.created", async (context) => {
 			const matches = COMMAND_REGEX.exec(context.payload.comment.body);
+
 			if (!matches) return;
 
 			const [, command, cOwner, cRepo] = matches;
+
 			if (command == "upstream") {
 				const { repository, sender } = context.payload;
 
