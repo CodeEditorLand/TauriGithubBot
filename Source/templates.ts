@@ -4,7 +4,9 @@
 
 export const UPSTREAM_ISSUE_BODY_PREDICATE =
 	"> This issue has been upstreamed from";
+
 export const UPSTREAM_ISSUE_BODY_SEPARATOR = "\n\n";
+
 export function makeUpstreamIssueBody(
 	originalIssueUrl: string,
 	body: string,
